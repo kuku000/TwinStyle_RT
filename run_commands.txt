@@ -1,0 +1,3 @@
+sudo docker run --rm -v /home/cils0004/CBStyling-master:/home/content -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY -e GDK_SCALE -e GDK_DPI_SCALE -v /dev/snd:/dev/snd --privileged=true -it --runtime nvidia dustynv/pytorch:2.1-r35.3.1 
+python3 main.py -i ./images/example.png -o ./images/stylized.png -s 0 -c 13
+

@@ -1,0 +1,51 @@
+＃原始版（只有nv的東西）
+sudo docker run  -v /home/cils0004/CBStylingStream:/home/ubuntu/content -it --runtime=nvidia nvcr.io/nvidia/l4t-ml:r35.2.1-py3
+
+
+#完整版
+sudo docker run  -v /home/cils0004/CBStylingStream:/home/ubuntu/content -it --rm --runtime=nvidia style1
+
+sudo docker run --gpus all -v /home/cils0004/CBStylingStream:/home/ubuntu/content -it --rm --runtime=nvidia style1
+
+＃＃舊版CBStyling
+CBStyling-master
+
+sudo docker run  -v /home/cils0004/CBStyling-master:/home/ubuntu/content -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY -e GDK_SCALE -e GDK_DPI_SCALE -v /dev/video0:/dev/video0 --privileged=true -it --rm --runtime=nvidia cbstyle
+
+python3 /home/ubuntu/content/main.py -i /home/ubuntu/content/images/example.png -o /home/ubuntu/content/images/test.png -s 0 -c 13
+
+
+
+
+＃＃新版可以吃webcam串流
+#掛載鏡頭,先在在ubuntu terminal 打
+export DISPLAY=:0 
+xhost +
+
+#開啟docker
+sudo docker run  -v /home/cils0004/StylingStream:/home/ubuntu/content -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY -e GDK_SCALE -e GDK_DPI_SCALE -v /dev/video0:/dev/video0 --privileged=true -it --rm --runtime=nvidia cbstyle
+
+
+#執行程式碼
+python3 /home/ubuntu/content/main.py -s1 3 -s2 2 -c 11 -m DABNet
+
+python3 /home/ubuntu/content/main.py -s1 3 -s2 2 -c 1 -m ENet
+
+python3 /home/ubuntu/content/main.py -s1 3 -s2 2 -c 1 -m SDABNet
+#以下可以跳過
+#安裝pyqt5
+sudo apt-get install python3-pyqt5
+#docker 開啟後需要先裝tkinter
+sudo apt-get update
+sudo apt-get install python3-tk
+
+
+
+
+＃測試opencv用
+sudo docker run  -v /home/cils0004/CBStylingStream:/home/ubuntu/content -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY -e GDK_SCALE -e GDK_DPI_SCALE -v /dev/video0:/dev/video0 --privileged=true -it --rm --runtime=nvidia cbstyle
+
+python3 /home/ubuntu/content/main.py -i /home/ubuntu/content/images/example.png -o /home/ubuntu/content/images/test.png -s 0 -c 13
+
+python3 /home/ubuntu/content/test.py
+
