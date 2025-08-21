@@ -22,4 +22,13 @@ Live streaming style transfer (background and characters are converted separatel
 <img width="1467" height="828" alt="image" src="https://github.com/user-attachments/assets/2bf17d38-c2fd-400a-a592-173f2c16a7bb" />
 <img width="1468" height="826" alt="image" src="https://github.com/user-attachments/assets/f9fd0e77-0781-4f92-a8bd-851b050157c9" />
 
+https://github.com/user-attachments/assets/ec43d806-4806-430b-af8f-eae4b960e51d
+### youtube: https://youtu.be/QXZZo53d1lE
+<img width="593" height="81" alt="image" src="https://github.com/user-attachments/assets/87f7389e-cf1b-440b-ad08-147635e01fc0" />
 
+## Reference:
+- https://www.kaggle.com/datasets/tapakah68/supervisely-filtered-segmentation-person-dataset  
+- https://www.researchgate.net/figure/The-complete-architecture-of-the-ENet-model-is-shown-The-model-includes-both-encoder_fig5_326883590
+- https://arxiv.org/pdf/1606.02147
+- https://github.com/abhiskk/fast-neural-style
+- https://github.com/IssamLaradji/CBStyling
