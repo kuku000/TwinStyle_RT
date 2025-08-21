@@ -29,8 +29,7 @@ Live streaming style transfer (background and characters are converted separatel
 <img width="1468" height="826" alt="image" src="https://github.com/user-attachments/assets/f9fd0e77-0781-4f92-a8bd-851b050157c9" />
 
 https://github.com/user-attachments/assets/ec43d806-4806-430b-af8f-eae4b960e51d
-### youtube: https://youtu.be/QXZZo53d1lE
-<img width="593" height="81" alt="image" src="https://github.com/user-attachments/assets/87f7389e-cf1b-440b-ad08-147635e01fc0" />
+youtube: https://youtu.be/QXZZo53d1lE
 
 ## Reference:
 - https://www.kaggle.com/datasets/tapakah68/supervisely-filtered-segmentation-person-dataset  
