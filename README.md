@@ -5,7 +5,7 @@ Live streaming style transfer (background and characters are converted separatel
 - https://github.com/Lowen0909
 - https://github.com/Lowen0909
 - https://github.com/JeffYaCheng
-## Introduction
+## Introduction:
 <img width="1472" height="830" alt="image" src="https://github.com/user-attachments/assets/b69e5d82-167c-41d8-bb98-01bca33a777f" />
 <img width="1179" height="665" alt="image" src="https://github.com/user-attachments/assets/a5961575-8213-4606-9342-fa8eaeac8b94" />
 <img width="1467" height="823" alt="image" src="https://github.com/user-attachments/assets/7518a712-0877-4f56-9a30-af971af745f3" />
